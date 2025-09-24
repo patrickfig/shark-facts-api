@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def shark_fact():
-    return jsonify({"msg": "Shark API is alive 🦈"})
+    return jsonify({"ok": True, "msg": "Shark API is alive 🦈"})
