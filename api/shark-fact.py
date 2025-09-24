@@ -33,7 +33,7 @@ def fetch_fact(lang, max_len):
     if not fact: raise RuntimeError("Resumo vazio")
     return {"fact": fact, "title": title, "lang": lang, "source": "Wikipedia", "url": url, "date": today}
 
-@app.route("/shark-fact")
+@app.route("/")
 def shark_fact():
     lang = request.args.get("lang","pt")
     if lang not in ("pt","en"): lang = "pt"
